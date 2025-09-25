@@ -241,7 +241,7 @@
 
   <script>
   /************************ CONFIG ************************/
-  // URL actualizada para Culiacán
+  // URL actualizada para Sonora
   const URL_VENDEDORES_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQvPfJWEmigh61MLfqMUfZAjd3z3tlkUDBGZl7U0dO8qxEHDFHFGIao_Y8bO98j2z8K6_g8-S9uMkVe/pub?output=csv";
   const URL_DENUE_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQPuZJkEaAR9JYH3kyJwCgbKlvcjy4FmeNOytGEvHPLJHz1FIMDtWP2gBV7Te3R_1LW241FejcD900g/pub?output=csv";
 
@@ -275,7 +275,7 @@
   let vendedorSeleccionado = null; // Para filtrar por vendedor
 
   window.addEventListener('load', () => {
-    console.log("🚀 Aplicación iniciada - Culiacán", new Date().toLocaleTimeString());
+    console.log("🚀 Aplicación iniciada - Sonora", new Date().toLocaleTimeString());
     
     // Mostrar en consola cuando se detectan cambios
     const originalLog = console.log;
@@ -328,8 +328,8 @@
   }
 
   /************************ MAPA Y CAPAS ************************/
-  // Coordenadas actualizadas para Culiacán
-  const map = L.map('map').setView([24.8049, -107.3939], 12);
+  // Coordenadas actualizadas para Sonora
+  const map = L.map('map').setView([27.2784, -109.6881], 11);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
   }).addTo(map);
@@ -910,4 +910,5 @@
   verificarActualizaciones();
   </script>
 </body>
+
 </html>
